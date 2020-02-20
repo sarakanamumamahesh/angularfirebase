@@ -1,24 +1,35 @@
-.container-fluid{
-  width: 100%;
-  height: 100vh;
-  background-color: #7f5a83;
- background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 
-
+ .container-fluid{
+   padding-top: 5%;
+   height: 100vh;
  }
- .container{
-   padding: 10%;
- }
- .fonticon{
-  color: #f8ceec;
+.login{
+  width: 94%;
+  margin: 5px;
+  text-align: center;
 
-
-   width: 3rem;
- }
+}
+label{
+  padding-bottom: 0px;
+}
+h3{
+  display: inline-block;
+}
  .card{
+   width: 50%;
    background-color: #9e8fb2;
  background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
  }
 .remember{
   padding-left: 15px;
+}
+.icon{
+  width: 1.5em;
+  height: 1.5em;
+}
+.body{
+  width: 100%;
+  height: 100%;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }

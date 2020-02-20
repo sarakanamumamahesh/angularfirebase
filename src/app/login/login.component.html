@@ -1,36 +1,35 @@
-<div class="container-fluid">
-  <div class="container ">
-    <div class="d-flex justify-content-center h-100 ">
+<div class="body ">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-center ">
       <div class="card">
         <div class="card-header">
           <h3>Sign In</h3>
-          <div class="d-flex justify-content-end social_icon">
-            <label for="plus">Google</label><fa-icon id="plus" [icon]="faPlus" class="fonticon" (click)="gSign()"></fa-icon>
+        </div>
+        <div class="card-body ">
+          <div class="btn btn-primary login" (click)="gSign()">
+           <img class="icon" src="../../assets/google-plus.svg" alt="googleplus" srcset=" ">
+           <label for="plus" >Sign in  with Google </label>
           </div>
-        </div>
-        <div class="card-body">
-          <form (ngSubmit)="onSignIn(f)" #f="ngForm">
-            <div class="input-group form-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><fa-icon [icon]="fauser"></fa-icon></span>
-              </div>
-              <input type="email" class="form-control" id="email" name="email" placeholder="email" ngModel>
-
-            </div>
-            <div class="input-group form-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><fa-icon [icon]="fakey"></fa-icon></span>
-              </div>
-              <input type="password" class="form-control" id="password" name="password" placeholder="password" ngModel>
-            </div>
-            <div class="row align-items-center remember">
-              <input type="checkbox">Remember Me
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Login" class="btn btn-primary float-right ">
-            </div>
-          </form>
-        </div>
+          <div class=" btn btn-primary login " (click)="fSign()">
+            <img class="icon" src="../../assets/facebook(1).svg" alt="facebook" id="facebook">
+            <label for="facebook" >Sign in  with Facebook</label>
+          </div>
+          <div class="btn btn-primary login"(click)="tSign()">
+            <img class="icon" src="../../assets/twitter.svg" alt="twitter">
+            <label for="plus">Sign in  with Twitter</label>
+          </div>
+          <div class="btn btn-primary login" (click)="gitSign()">
+            <img class="icon" id="github" src="../../assets/github.svg" alt="github">
+            <label for="github" >Sign in  with GitHub</label>
+          </div>
+          <div class="btn btn-primary login">
+            <img class="icon" id="github" src="../../assets/mail.svg" alt="github">
+            <label for="github" routerLink = 'newuser'>Sign in  with Email</label>
+          </div>
+          <div class="btn btn-primary login">
+            <img class="icon" src="../../assets/guest.svg" alt="guest">
+            <label for="plus">Sign as Guest</label>
+          </div>
         <div class="card-footer">
           <div class="d-flex justify-content-center links">
             Don't have an account?<a href="/newuser">Sign Up</a>

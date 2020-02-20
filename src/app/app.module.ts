@@ -5,22 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewuserComponent } from './newuser/newuser.component';
 import { LoginComponent } from './login/login.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { FirbaseserviceService } from './firbaseservice.service';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewuserComponent,
-    LoginComponent
+    LoginComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [FirbaseserviceService],
   bootstrap: [AppComponent]

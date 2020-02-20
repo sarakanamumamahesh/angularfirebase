@@ -15,9 +15,9 @@ export class NewuserComponent implements OnInit {
   }
  signUp(ngform: NgForm) {
 
-  const email = ngform.value.email;
-  const password = ngform.value.password;
-  this.firbaseservice.signUp(email, password);
-  console.log(ngform);
+  const email: string = ngform.value.email;
+  const password: string = ngform.value.password;
+ // this.firbaseservice.signUp(email, password);
+  console.log(ngform.value);
  }
 }

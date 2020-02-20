@@ -1,13 +1,11 @@
-.container-fluid{
+.page{
   width: 100%;
   height: 100vh;
   padding-top: 5%;
-  background-color: #2a2a72;
-background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  background-color: #9e8fb2;
+background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
 }
 .container{
-
-  padding: 5% 5%;
-  border: solid 0.3px ghostwhite;
-  border-radius: 7%;
+  width: 50%;
+  margin: auto;
 }
